@@ -22,6 +22,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<script>
+		$(document).ready(function(){
+			$("PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+
+			$("#I").hover(function(){
+				$("#PICTURE").attr("src","螢幕擷取畫面 (397).png");
+
+			$("#CSIM").hover(function(){
+				$("#PICTURE").attr("src","螢幕擷取畫面 (351).png");
+			});
+		});
+	</script>
+
 
 </head>
 <body>
@@ -49,12 +65,12 @@
 		<main>
 			<nav>
 				<h1><a href="https://www1.pu.edu.tw/~s1091829/cat"
-					class="text-reset text-decoration-none text-white bg-primary">蘇鈺暄SuYuXuan</a></h1>
+					class="text-reset text-decoration-none text-white bg-primary" target="_blank" id="I">蘇鈺暄SuYuXuan</a></h1>
 				<h2><a href="https://csim.pu.edu.tw/"
-					class="text-reset text-decoration-none text-white bg-primary">靜宜大學資訊管理學系二年級</a></h2>
+					class="text-reset text-decoration-none text-white bg-primary" id="CSIM">靜宜大學資訊管理學系二年級</a></h2>
 			</nav>
 
-			<img src="螢幕擷取畫面 (419).png" alt="照片" class="img-fluid rounded-circle">
+			<img src="螢幕擷取畫面 (419).png" alt="照片" class="img-fluid rounded-circle" id="PICTURE">
 			<br><br><br>
 
 			<div class="row">
